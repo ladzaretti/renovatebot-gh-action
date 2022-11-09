@@ -9,8 +9,9 @@
     ":semanticCommits",
     "group:allNonMajor"
   ],
+  "commitMessage": "1 {{{commitMessagePrefix}}} 1 2 {{{commitMessageAction}}} 2 3 {{{commitMessageTopic}}} 3 4 {{{commitMessageExtra}}} 4 5 {{{commitMessageSuffix}}} 5",
   "enabledManagers": ["github-actions"],
-  "commitMessageAction": "1 VERB 1",
-  "commitMessageTopic": "2 {{depName}} 2",
-  "commitMessageExtra": "3 {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}} 3"
+  "commitMessageAction": "VERB",
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageExtra": "{{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}"
 }
