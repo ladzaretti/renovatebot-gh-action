@@ -12,6 +12,6 @@
   "commitMessage": "1 {{{commitMessagePrefix}}} 1 2 {{{commitMessageAction}}} 2 3 {{{commitMessageTopic}}} 3 4 {{{commitMessageExtra}}} 4 5 {{{commitMessageSuffix}}} 5",
   "enabledManagers": ["github-actions"],
   "commitMessageAction": "VERB",
-  "commitMessageTopic": "{{depName}}",
+  "commitMessageTopic": "{{{depName}} {{{depType}}}",
   "commitMessageExtra": "{{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}"
 }
