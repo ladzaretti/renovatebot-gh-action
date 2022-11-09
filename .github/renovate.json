@@ -11,6 +11,6 @@
   ],
   "enabledManagers": ["github-actions"],
   "commitMessageAction": "VERB",
-  "commitMessageTopic": "{{{depName}} {{{depType}}}",
+  "commitMessageTopic": "",
   "commitMessageExtra": "{{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}"
 }
